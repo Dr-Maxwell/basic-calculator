@@ -1,0 +1,125 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+}
+.container {
+  width: 100%;
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  background-color: rgb(73, 238, 238);
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+}
+.calc_1 {
+  background-color: white;
+  width: 90%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+.calc_1_main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 70%;
+  height: 95%;
+  padding: 1rem;
+  border: none;
+  box-shadow: -0.3px 0.5px 2px rgb(160, 154, 154);
+}
+.display {
+  width: 100%;
+  height: 4rem;
+  box-shadow: -0.3px 0.3px 2px gray;
+}
+.display p {
+  text-align: end;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1.2rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.btns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.btns button {
+  padding: 4px;
+  width: 50px;
+  border: 0.1px solid rgb(158, 156, 156);
+}
+.style {
+  background-color: rgb(42, 91, 184);
+  grid-column: 4/5;
+  grid-row: 2/6;
+}
+.calc_2 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  height: 85%;
+  width: 330px;
+  padding: 0.5rem;
+  overflow: hidden;
+  background-color: rgb(211, 206, 206);
+  border: none;
+}
+.calc_2:before {
+  content: " ";
+  position: absolute;
+  bottom: -15%;
+  left: -10%;
+  width: 150%;
+  height: 60%;
+  background-color: rgb(219, 24, 24);
+  transform: rotate(-36deg);
+}
+.calc_2_main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: rgb(243, 235, 235);
+  border-radius: 10px;
+  width: 95%;
+  height: 97%;
+  overflow: hidden;
+  z-index: 1;
+}
+.display2 p {
+  padding: 1.2rem;
+  border-radius: 5px;
+  width: 100%;
+  height: 100px;
+  overflow-x: auto;
+  background-color: rgb(219, 24, 24);
+  text-align: end;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+.btns_2 {
+  display: grid;
+  padding: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.btns_2 button {
+  padding: 1rem;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(199, 194, 194, 0.712);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
