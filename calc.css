@@ -28,7 +28,7 @@ body {
   body {
     margin: 0px;
     height: 100%;
-    min-width: 340px;
+    width: 100%;
   }
 
   .container {
@@ -37,7 +37,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 370px;
     height: 100%;
     position: relative;
   }
