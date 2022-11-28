@@ -19,25 +19,20 @@ body {
   align-items: center;
   padding: 4rem;
 }
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 400px) {
   * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
   }
   body {
-    padding: 0px;
     margin: 0px;
     height: 100%;
-    width: 100%;
-  }
-  .btns button {
-    padding: 2px;
-    width: 10px;
-    border: 0.1px solid rgb(158, 156, 156);
+    max-width: 340px;
   }
 
   .container {
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -49,7 +44,7 @@ body {
   .container .calc_1 {
     padding: 0px;
     height: 400px;
-    width: 150%;
+    width: 300px;
   }
   .calc_1_main {
     display: flex;
@@ -58,6 +53,19 @@ body {
     align-items: center;
     min-width: 90%;
     height: 300px;
+  }
+  .calc_2 {
+    width: 300px;
+    padding: 0px;
+    margin: 0px;
+  }
+  .calc_2_main {
+    width: 270px;
+  }
+  .btns button {
+    padding: 2px;
+    width: 10px;
+    border: 0.1px solid rgb(158, 156, 156);
   }
 }
 .calc_1 {
